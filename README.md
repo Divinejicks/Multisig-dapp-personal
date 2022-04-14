@@ -1,15 +1,6 @@
-# Basic Sample Hardhat Project
-
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+Hardhat and ethers is use for testing
+We test for 
+1. It should be able to create a Transfer
+2. It should not be able to create a transfer if the sender is not amongst the approved addresses
+3. It should not be able to send the transfer if the approved number is not reached
+4. It should be able to send a transfer is the approved number is reached
